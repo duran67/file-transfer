@@ -25,7 +25,7 @@ namespace FileTransfer.Controllers
         /// Get files with optional regex pattern matching
         /// </summary>
         /// <param name="regex"></param>
-        /// <example>GET files[?regex=<pattern>]</example>
+        /// <example>GET files[?regex=...]</example>
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get(string regex = ".*?")
         {
